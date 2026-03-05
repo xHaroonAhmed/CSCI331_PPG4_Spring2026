@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------
 -- Microsoft SQL Server T-SQL Fundamentals
 -- Chapter 05 - Table Expressions
--- Homework 4
+-- Homework 5
 -- Haroon Ahmed
 ---------------------------------------------------------------------
 
@@ -127,4 +127,5 @@ SELECT
     SUM(COALESCE(freight,0)) AS total_freight
 FROM QuarterData
 GROUP BY FYQuarter
+
 ORDER BY FYQuarter DESC;
