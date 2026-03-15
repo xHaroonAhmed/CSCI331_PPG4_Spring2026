@@ -244,11 +244,6 @@ Northwinds2024Student
 
 ---
 
-## 👥 Group Members — PPG_4
-
-
----
-
 <div align="center">
 
 *Queens College, CUNY · Computer Science Department*
