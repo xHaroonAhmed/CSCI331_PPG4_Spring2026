@@ -10,16 +10,6 @@
 
 ---
 
-## 📁 Repository Structure
-
-```
-HW 6/
-├── Individual_PPG4_HW6_HaroonAhmed.sql   ← Completed query exercises
-└── README.md                              ← This file
-```
-
----
-
 ## 🎯 Assignment Overview
 
 This assignment focused on **Chapter 6: Set Operators** from *T-SQL Fundamentals (4th Edition)* by Itzik Ben-Gan. Set operators allow us to combine, compare, and subtract result sets from multiple SELECT statements — a powerful toolset for business intelligence and data analysis scenarios.
