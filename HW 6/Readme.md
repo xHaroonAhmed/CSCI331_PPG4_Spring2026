@@ -185,10 +185,6 @@ This assignment developed the following competencies as defined by the National 
 
 ---
 
-## 👥 Group Members — PPG_4
-
----
-
 <div align="center">
 
 *Queens College, CUNY · Computer Science Department*
