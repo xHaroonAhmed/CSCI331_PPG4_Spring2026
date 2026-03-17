@@ -2,6 +2,7 @@
 
 # 📊 CSCI 331 — Database and Data Modeling
 ### Homework 4 & 5 · Chapters 4 & 5: Subqueries & Table Expressions
+### YouTube Link: https://www.youtube.com/watch?v=3isJpz1IzYk
 
 > *Using T-SQL Subqueries and Table Expressions to answer complex business questions against the Northwinds2024Student database.*
 
