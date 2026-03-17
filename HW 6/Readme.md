@@ -2,6 +2,7 @@
 
 # 📊 CSCI 331 — Database and Data Modeling
 ### Homework 6 · Chapter 6: Set Operators in T-SQL
+### YouTube Link: https://youtu.be/sVfrJGxTqNU
 
 
 > *Applying T-SQL Set Operators to extract actionable business insights from the Northwinds2024Student database.*
