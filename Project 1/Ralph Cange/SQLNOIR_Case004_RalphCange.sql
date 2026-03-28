@@ -172,26 +172,3 @@ WHERE LOWER(vr.car_make)  LIKE '%lambo%'
 -- confesses to ordering the murder of Leonard Pierce.
 
 
--- ============================================================
--- CONCLUSION
--- ============================================================
--- The murderer (mastermind) is: MARCO SANTOS
---
--- Investigation Summary:
--- 1. The crime scene at Miami Mansion, Coconut Grove on
---    October 31, 1987 flagged a hotel booking and suspicious
---    phone activity as key leads.
--- 2. Witness clue pointed to The Grand Regency hotel.
---    Surveillance caught Antonio Rossi yelling on the phone:
---    "Did you kill him?" -- placing him as a co-conspirator.
--- 3. Phone records revealed Rossi called Victor DiMarco at
---    23:30, saying DiMarco should have "left the carpenter
---    do it himself" -- revealing a third party: a carpenter.
--- 4. Victor DiMarco confessed to being a middleman who was
---    paid to arrange and carry out the murder.
--- 5. Searching the vehicle registry for a Lamborghini
---    (DiMarco's payment) identified Marco Santos -- a Carpenter
---    at 112 Forestwood Way -- who owns a Lamborghini Countach
---    (plate EFG901) and confessed: "I ordered the hit.
---    It was me. You caught me."
--- ============================================================
