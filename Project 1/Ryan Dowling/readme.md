@@ -14,4 +14,12 @@ What theis project helps with: <br>
     -JOINS <br>
     -ALIAS NAMES <br>
     -CTEs <br>
-    -
+    -And building SUBQUERIES
+
+The Questions in this project is:
+1. Set in the gritty 1980s, a valuable briefcase has disappeared from the Blue Note Lounge. A witness reported that a man in a trench coat was seen fleeing the scene. Investigate the crime scene, review the list of suspects, and examine interview transcripts to reveal the culprit
+2.
+3.
+4.
+5.
+6.
