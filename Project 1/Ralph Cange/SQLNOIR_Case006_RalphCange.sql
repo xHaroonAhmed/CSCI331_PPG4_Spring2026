@@ -96,18 +96,5 @@ INNER JOIN final_interviews AS f
 -- ============================================================
 -- CONCLUSION
 -- ============================================================
--- The diamond thief is identified by the dock 3 marina rental.
---
--- Investigation Summary:
--- 1. The crime scene at the Fontainebleau Hotel charity gala
---    confirmed the "Heart of Atlantis" diamond necklace was
---    stolen from its display.
--- 2. A witness overheard: "Meet me at the marina, dock 3."
---    This revealed the thief had a pre-planned escape route
---    via a boat at dock 3 of the marina.
--- 3. Querying marina_rentals filtered by dock_number = '3'
---    and joining the guest table identified the renter by
---    name, occupation, and invitation code.
--- 4. A CTE joined the dock 3 renter to final_interviews,
---    where their confession confirmed they stole the diamond.
--- ============================================================
+-- The diamond thief is identified by the dock 3 marina rental
+-- Which was Mike Manning
