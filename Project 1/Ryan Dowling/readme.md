@@ -9,7 +9,7 @@ Each of the questions follows a basic structure: <br>
 -find who the crime doer is <br>
 -submit the name os the doer into the submit area <br>
  <br>
-What theis project helps with: <br>
+What this project helps with: <br>
 -This project helps with learning alot of different things with SQL such as <br>
     -JOINS <br>
     -ALIAS NAMES <br>
