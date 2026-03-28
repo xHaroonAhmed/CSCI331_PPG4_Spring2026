@@ -28,7 +28,6 @@
 
 -- ------------------------------------------------------------
 -- STEP 1: Retrieve the crime scene
--- Goal: Find the masked ball murder at Miami Mansion, Coconut Grove
 -- ------------------------------------------------------------
 
 SELECT *
@@ -45,7 +44,6 @@ WHERE date     = 19871031
 
 -- ------------------------------------------------------------
 -- STEP 2: Gather witness statements
--- Goal: Get clues from witnesses at the crime scene
 -- ------------------------------------------------------------
 
 SELECT p.name AS witness, ws.clue
@@ -65,7 +63,6 @@ WHERE ws.crime_scene_id = (
 
 -- ------------------------------------------------------------
 -- STEP 3: Check hotel bookings at The Grand Regency
--- Goal: Find who checked in and what surveillance noted
 -- ------------------------------------------------------------
 
 SELECT p.name, p.occupation, p.address,
@@ -87,7 +84,6 @@ WHERE hc.hotel_name      = 'The Grand Regency'
 
 -- ------------------------------------------------------------
 -- STEP 4: Investigate suspicious phone activity
--- Goal: Find who Rossi called and what was said
 -- ------------------------------------------------------------
 
 SELECT
@@ -96,9 +92,9 @@ SELECT
     pr.call_date,
     pr.call_time,
     pr.note        AS phone_note
-FROM phone_records pr
-JOIN person caller    ON pr.caller_id    = caller.id
-JOIN person recipient ON pr.recipient_id = recipient.id
+FROM phone_records AS pr
+JOIN person AS caller    ON pr.caller_id    = caller.id
+JOIN person AS recipient ON pr.recipient_id = recipient.id
 WHERE pr.call_date = 19871030
   AND (
       caller.name    = 'Antonio Rossi'
@@ -116,7 +112,6 @@ WHERE pr.call_date = 19871030
 
 -- ------------------------------------------------------------
 -- STEP 5: Identify Victor DiMarco and his role
--- Goal: Find DiMarco's details and what he admitted
 -- ------------------------------------------------------------
 
 SELECT p.name, p.occupation, p.address, fi.confession
@@ -134,8 +129,6 @@ WHERE p.name = 'Victor DiMarco';
 
 -- ------------------------------------------------------------
 -- STEP 6: Find who owns the Lamborghini (the mastermind)
--- Goal: The person who paid DiMarco with a Lamborghini
---       is the one who ordered the murder
 -- ------------------------------------------------------------
 
 SELECT
