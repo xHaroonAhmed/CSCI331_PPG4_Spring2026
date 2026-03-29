@@ -27,7 +27,6 @@
 
 -- ------------------------------------------------------------
 -- STEP 1: Retrieve the crime scene at Coral Bay Marina
--- Goal: Find the description and key clues from the scene
 -- ------------------------------------------------------------
 
 SELECT *
@@ -45,7 +44,6 @@ WHERE date     = 19860814
 
 -- ------------------------------------------------------------
 -- STEP 2: Find the two persons of interest from the clues
--- Goal: Use wildcard searches on address and name fields
 -- ------------------------------------------------------------
 
 -- Clue #1: Person living on 300-range Ocean Drive
@@ -67,7 +65,6 @@ WHERE name LIKE '%ul %ez';
 
 -- ------------------------------------------------------------
 -- STEP 3: Get Carlos Mendez's interview transcript
--- Goal: See what he witnessed near the marina
 -- ------------------------------------------------------------
 
 SELECT p.name, p.address, i.transcript
@@ -84,8 +81,6 @@ WHERE p.address LIKE '3__ Ocean Drive';
 
 -- ------------------------------------------------------------
 -- STEP 4: Find who checked into a hotel on August 13, 1986
--- Goal: Cross-reference hotel_checkins with surveillance_records
---       and person to find suspicious activity
 -- ------------------------------------------------------------
 
 SELECT p.name, h.hotel_name, p.alias, s.suspicious_activity
@@ -103,8 +98,6 @@ WHERE h.check_in_date = '19860813';
 
 -- ------------------------------------------------------------
 -- STEP 5: Confirm the murderer via confession
--- Goal: Pull Robert Smith's confession to verify guilt
---       Uses a subquery to combine hotel + surveillance + confession
 -- ------------------------------------------------------------
 
 SELECT O.name, c.confession
