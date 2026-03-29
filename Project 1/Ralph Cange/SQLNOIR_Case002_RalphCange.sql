@@ -27,7 +27,6 @@
 
 -- ------------------------------------------------------------
 -- STEP 1: Retrieve the crime scene report
--- Goal: Find the theft at West Hollywood Records on July 15, 1983
 -- ------------------------------------------------------------
 
 SELECT *
@@ -42,7 +41,6 @@ WHERE date     = 19830715
 
 -- ------------------------------------------------------------
 -- STEP 2: Retrieve witness clues linked to the crime scene
--- Goal: Get the physical descriptions of the suspect
 -- ------------------------------------------------------------
 
 SELECT w.clue
@@ -62,8 +60,6 @@ WHERE w.crime_scene_id = (
 
 -- ------------------------------------------------------------
 -- STEP 3: Find the suspect matching the witness description
--- Goal: Filter suspects by bandana_color = 'red'
---       AND accessory = 'gold watch', then join their transcript
 -- ------------------------------------------------------------
 
 SELECT sus.name, i.transcript
@@ -88,7 +84,6 @@ WHERE sus.bandana_color = 'red'
 
 -- ------------------------------------------------------------
 -- STEP 4: Verify the confessor
--- Goal: Isolate the suspect whose transcript contains a confession
 -- ------------------------------------------------------------
 
 SELECT sus.name, i.transcript
