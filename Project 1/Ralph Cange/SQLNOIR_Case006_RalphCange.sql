@@ -24,7 +24,6 @@
 
 -- ------------------------------------------------------------
 -- STEP 1: Retrieve the crime scene at the Fontainebleau Hotel
--- Goal: Find the description and any initial clues
 -- ------------------------------------------------------------
 
 SELECT *
@@ -38,7 +37,6 @@ WHERE location LIKE '%Fontainebleau%';
 
 -- ------------------------------------------------------------
 -- STEP 2: Gather witness statements
--- Goal: Collect clues from guests who saw something suspicious
 -- ------------------------------------------------------------
 
 SELECT g.name AS witness, ws.clue
@@ -54,8 +52,6 @@ JOIN guest g ON ws.guest_id = g.id;
 
 -- ------------------------------------------------------------
 -- STEP 3: Find who rented a boat at dock 3
--- Goal: Identify the guest who had access to dock 3
---       on the night of the gala
 -- ------------------------------------------------------------
 
 SELECT g.id, g.name, g.occupation, g.invitation_code,
@@ -72,8 +68,6 @@ WHERE m.dock_number = '3';
 
 -- ------------------------------------------------------------
 -- STEP 4: Confirm the thief via final interview confession
--- Goal: Use a CTE to cleanly link the dock 3 renter
---       to their confession
 -- ------------------------------------------------------------
 
 WITH C AS (
