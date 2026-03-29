@@ -19,7 +19,6 @@
 
 -- ------------------------------------------------------------
 -- STEP 1: Retrieve the crime scene at the Blue Note Lounge
--- Goal: Find the witness clue that describes the suspect
 -- ------------------------------------------------------------
 
 SELECT *
@@ -34,7 +33,6 @@ WHERE location = 'Blue Note Lounge';
 
 -- ------------------------------------------------------------
 -- STEP 2: Find suspects matching the witness description
--- Goal: Filter suspects by scar = 'left cheek' AND attire = 'trench coat'
 -- ------------------------------------------------------------
 
 SELECT sus.name, sus.scar, sus.attire, int.transcript
@@ -52,7 +50,6 @@ WHERE sus.scar = 'left cheek'
 
 -- ------------------------------------------------------------
 -- STEP 3: Verify suspect using interview transcript
--- Goal: Confirm which suspect admits to the theft
 -- ------------------------------------------------------------
 
 SELECT sus.name, sus.scar, sus.attire, int.transcript
